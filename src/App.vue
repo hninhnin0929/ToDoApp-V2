@@ -1,13 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <!-- <router-view/> -->
+    <TodoInput />
+    <TodoList />
+    <TodoItem />
   </div>
 </template>
 
 <script>
+
+import TodoInput from '@/components/TodoInput';
+import TodoList from '@/components/TodoList';
+import TodoItem from '@/components/TodoItem';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TodoInput,
+    TodoList,
+    TodoItem
+  }
 }
 </script>
 
