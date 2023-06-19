@@ -27,6 +27,9 @@ export default new Vuex.Store({
     actions: {
         addTodo({commit}, todo){
             commit('add_todo', todo);
+        },
+        deleteTodo({commit}, id){
+            commit('delete_todo', id);
         }
     },
     mutations: {
@@ -34,6 +37,9 @@ export default new Vuex.Store({
             state.todos.push(todo);
             console.log(todo);
             console.log(state.todos)
+        },
+        delete_todo(state, id){
+            state.todos = state.todos.filter(todo=> todo.id != id);
         }
     },
     modules: {
