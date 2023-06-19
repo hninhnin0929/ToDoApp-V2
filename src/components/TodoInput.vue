@@ -20,7 +20,7 @@ import { v1 } from 'uuid';
         methods: {
             ...mapActions(["addTodo"]),
             todoTextChange(e){
-                // this.todoText = e.target.value;
+                this.todoText = e.target.value;
                 console.log("todoTextChange ", this.todoText);
             },
             addTodoI(){
