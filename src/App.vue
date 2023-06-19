@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <!-- <router-view/> -->
     <TodoInput />
     <TodoList />
-    <TodoItem />
+    
   </div>
 </template>
 
