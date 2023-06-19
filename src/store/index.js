@@ -30,7 +30,10 @@ export default new Vuex.Store({
         },
         deleteTodo({commit}, id){
             commit('delete_todo', id);
-        }
+        },
+        updateTodo({commit}, todo){
+            commit("update_todo", todo);
+        },
     },
     mutations: {
         add_todo(state, todo){
@@ -40,6 +43,13 @@ export default new Vuex.Store({
         },
         delete_todo(state, id){
             state.todos = state.todos.filter(todo=> todo.id != id);
+        },
+        update_todo(state, todo){
+            let index = state.todos.findIndex(t=> t.id == todo.id);
+            console.log(index);
+            if(index != -1){
+                state.todos[index] = todo;
+            }
         }
     },
     modules: {
