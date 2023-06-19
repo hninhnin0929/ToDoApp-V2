@@ -1,10 +1,13 @@
 <template>
     <div>
-        <div class="row my-3 align-items-center d-flex todoitem">
-            <h5 class="col-1">#1</h5>
+        <div class="row my-3 justify-content-between d-flex">
+            <!-- <h5 class="col-1">#1</h5> -->
             <h3 class="col-6">Todo Title</h3>
-            <button class="btn btn-primary mx-2 col-2">Edit</button>
-            <button class="btn btn-danger col-2">Delete</button>
+            <div class="col-4">
+                <button class="btn btn-primary mx-2 ">Edit</button>
+                <button class="btn btn-danger ">Delete</button>
+            </div>
+            
         </div>
     </div>
 </template>
