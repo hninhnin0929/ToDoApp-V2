@@ -32,6 +32,7 @@ export default new Vuex.Store({
     mutations: {
         add_todo(state, todo){
             state.todos.push(todo);
+            console.log(state.todos)
         }
     },
     modules: {
