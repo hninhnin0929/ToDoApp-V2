@@ -32,9 +32,6 @@ export default new Vuex.Store({
         updateTodo({commit}, todo){
             commit("update_todo", todo);
         },
-        updateStatus({commit}, todo){
-            commit("update_status", todo);
-        }
     },
     mutations: {
         add_todo(state, todo){
